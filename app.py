@@ -404,6 +404,41 @@ label[data-testid="stRadioOption"]:hover{
     box-shadow:0 1px 3px rgba(11,31,51,0.04);
 }
 
+/* -----------------------------------------------------------
+   FORZAR TEMA CLARO
+----------------------------------------------------------- */
+
+html, body, [data-testid="stAppViewContainer"],
+[data-testid="stApp"], [data-testid="stMain"] {
+    background-color: #F5F8FA !important;
+    color: #0B1F33 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #004481 !important;
+}
+
+.stMarkdown p,
+.stMarkdown span,
+.stMarkdown label {
+    color: #0B1F33 !important;
+}
+
+p {
+    color: #5C6B7A !important;
+}
+
+[data-baseweb="radio"],
+[data-baseweb="radio"] label,
+[data-baseweb="radio"] label p {
+    color: #0B1F33 !important;
+}
+
+div.stButton button,
+div.stButton button p {
+    color: white !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
