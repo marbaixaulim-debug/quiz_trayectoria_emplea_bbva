@@ -1,7 +1,3 @@
-# para iniciar el proyecto:
-# cd "C:\Users\maret\Documents\ProgramaEMPLEA2026\QuizTrayectoria"
-#
-# & "C:\Users\maret\AppData\Local\Programs\Thonny\python.exe" -m streamlit run app.py
 
 import streamlit as st
 
