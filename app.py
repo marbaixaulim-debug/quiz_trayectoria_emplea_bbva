@@ -521,22 +521,7 @@ elif st.session_state.page == "quiz":
     total_questions = len(questions)
     current = st.session_state.current_question
 
-    st.markdown(
-        '<div id="question-top"></div>',
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        """
-        <script>
-        window.parent.document.getElementById("question-top")?.scrollIntoView({
-            behavior: "instant",
-            block: "start"
-        });
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
+    
 
 
     dots_html = "<div class='step-indicator'>"
