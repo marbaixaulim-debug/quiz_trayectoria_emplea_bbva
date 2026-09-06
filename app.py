@@ -5,6 +5,28 @@ from questions import questions
 from scoring import calculate_result
 from outcomes import outcomes
 
+def scroll_to_top():
+    st.markdown(
+        """
+        <script>
+            setTimeout(function() {
+                const main = window.parent.document.querySelector(
+                    '[data-testid="stAppViewContainer"]'
+                );
+
+                if (main) {
+                    main.scrollTo({
+                        top: 0,
+                        behavior: 'instant'
+                    });
+                }
+
+                window.parent.scrollTo(0, 0);
+            }, 150);
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
 
 # ============================================================
 # CONFIGURACIÓN DE LA PÁGINA
@@ -463,6 +485,7 @@ if "answers" not in st.session_state:
 
 if st.session_state.page == "welcome":
 
+    scroll_to_top()
     total_questions = len(questions)
 
     st.markdown("<br>", unsafe_allow_html=True)
@@ -518,11 +541,10 @@ if st.session_state.page == "welcome":
 
 elif st.session_state.page == "quiz":
 
+    scroll_to_top()
+    
     total_questions = len(questions)
     current = st.session_state.current_question
-
-    
-
 
     dots_html = "<div class='step-indicator'>"
     for i in range(total_questions):
@@ -655,6 +677,7 @@ elif st.session_state.page == "quiz":
 
 elif st.session_state.page == "result":
 
+    scroll_to_top()
     result = calculate_result(
         questions,
         st.session_state.answers
