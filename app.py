@@ -17,32 +17,6 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-def scroll_to_top():
-    st.markdown(
-        """
-        <script>
-        setTimeout(function() {
-            const doc = window.parent.document;
-
-            const elements = [
-                doc.querySelector('[data-testid="stAppViewContainer"]'),
-                doc.querySelector('[data-testid="stMain"]'),
-                doc.querySelector('section.main'),
-                doc.documentElement,
-                doc.body
-            ];
-
-            elements.forEach(function(el) {
-                if (el) {
-                    el.scrollTop = 0;
-                    el.scrollTo(0, 0);
-                }
-            });
-        }, 300);
-        </script>
-        """,
-        unsafe_allow_html=True
-    )
 
 # ============================================================
 # ICONOS Y COLORES (perfil/interés solo para la pantalla de resultado)
@@ -489,7 +463,6 @@ if "answers" not in st.session_state:
 
 if st.session_state.page == "welcome":
 
-    scroll_to_top()
     total_questions = len(questions)
 
     st.markdown("<br>", unsafe_allow_html=True)
@@ -545,9 +518,26 @@ if st.session_state.page == "welcome":
 
 elif st.session_state.page == "quiz":
 
-    scroll_to_top()
     total_questions = len(questions)
     current = st.session_state.current_question
+
+    st.markdown(
+        '<div id="question-top"></div>',
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        """
+        <script>
+        window.parent.document.getElementById("question-top")?.scrollIntoView({
+            behavior: "instant",
+            block: "start"
+        });
+        </script>
+        """,
+        unsafe_allow_html=True
+    )
+
 
     dots_html = "<div class='step-indicator'>"
     for i in range(total_questions):
@@ -680,7 +670,6 @@ elif st.session_state.page == "quiz":
 
 elif st.session_state.page == "result":
 
-    scroll_to_top()
     result = calculate_result(
         questions,
         st.session_state.answers
