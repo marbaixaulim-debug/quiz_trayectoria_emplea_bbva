@@ -24,8 +24,8 @@ outcomes = {
             "🌱 Analista CIB",
             "📊 Analista Senior CIB",
             "💼 Senior Associate CIB",
-            "📈 Associate Lead - Advisory GTB UK",
-            "⭐ Vice President - Advisory GTB UK"
+            "📈 Associate Lead - Advisory GTB",
+            "⭐ Vice President - Advisory GTB"
         ]
     },
 
@@ -57,10 +57,10 @@ outcomes = {
         "title": "Escalador + Personas",
         "description": "Crees que las organizaciones crecen cuando las personas tienen oportunidades para desarrollarse. Te imaginas construyendo una carrera acompañando a los equipos, impulsando el talento y asumiendo progresivamente responsabilidades relacionadas con el liderazgo, el desarrollo profesional y la cultura organizativa.",
         "career": [
-            "🌱 Gestor de RRHH - Territorial Madrid",
+            "🌱 Gestor de RRHH - Área Territorial",
             "🤝 Gestor de RRHH - Servicios Centrales",
-            "👥 Jefe de Gestión de RRHH - Territorial Madrid",
-            "📚 Jefe de Gestión de RRHH - Ámbito Central",
+            "👥 Jefe de Gestión de RRHH - Área Territorial",
+            "📚 Jefe de Gestión de RRHH - Servicios Centrales",
             "⭐ Responsable de Compensación"
         ]
     },
@@ -142,7 +142,7 @@ outcomes = {
         "description": "Te interesa comprender cómo las personas aprenden, colaboran y se desarrollan dentro de una organización. Disfrutas adquiriendo conocimientos sobre talento, formación y cultura corporativa para ayudar a crear mejores entornos de trabajo. Con el tiempo podrías convertirte en una persona de referencia en el desarrollo del talento y la gestión de personas.",
         "career": [
             "🌱 Gestor de RRHH - Servicios Centrales",
-            "🤝 Jefe de Gestión de RRHH - Ámbito Central",
+            "🤝 Jefe de Gestión de RRHH - Servicios Centrales",
             "📚 Responsable de Compensación",
             "👥 Head of Talent & Culture - Tecnología y Operaciones",
             "⭐ Head of Talent & Culture - Riesgos Globales"
@@ -215,10 +215,10 @@ outcomes = {
         "description": "Disfrutas entendiendo las necesidades de los clientes y colaborando con diferentes equipos para ofrecerles mejores soluciones. Te motiva participar en proyectos dinámicos, manteniendo un entorno de trabajo cercano y una evolución profesional que combine aprendizaje, estabilidad y nuevas oportunidades.",
         "career": [
             "🌱 Gestor Comercial",
-            "📊 Sales Manager",
-            "📦 Ventas Europa y Asia - Cash Management",
-            "🤝 Dirección Global de Ventas de Cash Management",
-            "⭐ Dirección de Trade Finance Sudamérica"
+            "📊 Responsable de Ventas",
+            "📦 Responsable de Banca Transaccional",
+            "🤝 Dirección de Banca Transaccional",
+            "⭐ Dirección de Trade Finance"
         ]
     },
 
@@ -226,7 +226,7 @@ outcomes = {
         "title": "Equilibrado + Personas",
         "description": "Te interesa contribuir a que las personas disfruten de un entorno de trabajo en el que puedan desarrollarse y sentirse valoradas. Disfrutas colaborando con equipos, escuchando diferentes perspectivas y ayudando a construir una cultura basada en la confianza, el bienestar y el crecimiento compartido.",
         "career": [
-            "🌱 Gestor de RRHH - Territorial Madrid",
+            "🌱 Gestor de RRHH - Área Territorial",
             "🤝 Principal Manager de Estrategia de Talento",
             "👥 Dirección Global de Riesgos de Personas",
             "💙 Dirección de Experiencia del Empleado",
@@ -313,8 +313,8 @@ outcomes = {
         "title": "Especialista + Personas",
         "description": "Te interesa desarrollar un conocimiento profundo sobre el desarrollo del talento, la cultura organizativa y la experiencia de las personas. Disfrutas aportando soluciones desde la especialización y ayudando a construir entornos de trabajo donde las personas puedan crecer y desarrollar todo su potencial.",
         "career": [
-            "🌱 Gestor de RRHH - Servicios Centrales",
-            "📚 Jefe de Gestión de RRHH - Territorial Madrid",
+            "🌱 Gestor de RRHH",
+            "📚 Jefe de Gestión de RRHH",
             "🤝 Responsable de Compensación",
             "💙 Head of Talent & Culture - Tecnología y Operaciones",
             "⭐ Head of Talent & Culture - Riesgos Globales"
@@ -399,7 +399,7 @@ outcomes = {
         "title": "Innovador + Personas",
         "description": "Crees que las organizaciones evolucionan cuando las personas tienen la oportunidad de crecer, colaborar y desarrollar nuevas ideas. Te motiva impulsar iniciativas que transformen la cultura corporativa y crear experiencias que hagan del trabajo un lugar donde innovar también sea parte del día a día.",
         "career": [
-            "🌱 Gestor de RRHH - Territorial Madrid",
+            "🌱 Gestor de RRHH",
             "🤝 Principal Manager de Estrategia de Talento",
             "💡 Dirección Global de Riesgos de Personas",
             "🚀 Dirección de Experiencia del Empleado",
