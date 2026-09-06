@@ -21,20 +21,24 @@ def scroll_to_top():
     st.markdown(
         """
         <script>
-            setTimeout(function() {
-                const main = window.parent.document.querySelector(
-                    '[data-testid="stAppViewContainer"]'
-                );
+        setTimeout(function() {
+            const doc = window.parent.document;
 
-                if (main) {
-                    main.scrollTo({
-                        top: 0,
-                        behavior: 'instant'
-                    });
+            const elements = [
+                doc.querySelector('[data-testid="stAppViewContainer"]'),
+                doc.querySelector('[data-testid="stMain"]'),
+                doc.querySelector('section.main'),
+                doc.documentElement,
+                doc.body
+            ];
+
+            elements.forEach(function(el) {
+                if (el) {
+                    el.scrollTop = 0;
+                    el.scrollTo(0, 0);
                 }
-
-                window.parent.scrollTo(0, 0);
-            }, 150);
+            });
+        }, 300);
         </script>
         """,
         unsafe_allow_html=True
